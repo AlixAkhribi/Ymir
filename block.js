@@ -1,8 +1,5 @@
 const { GENESIS_DATA} = require('./config')
 
-console.log(GENESIS_DATA);
-
-
 class Block {
     constructor({ timestamp, lastHash, hash, data }) {
         this.timestamp = timestamp;
@@ -13,6 +10,14 @@ class Block {
 
     static genesis() {
         return new Block(GENESIS_DATA);
+    }
+
+    static mineBlock({lastBlock, data}){
+        return new Block({
+            timestamp : Date.now(),
+            lastHash : lastBlock.hash,
+            data
+        })
     }
 }
 
