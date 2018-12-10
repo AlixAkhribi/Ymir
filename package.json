@@ -1,0 +1,23 @@
+ {
+  "name": "Ymir",
+  "version": "1.0.0",
+  "description": "Ymir",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlixAkhribi/Ymir.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlixAkhribi/Ymir/issues"
+  },
+  "homepage": "https://github.com/AlixAkhribi/Ymir#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
